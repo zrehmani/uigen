@@ -14,7 +14,7 @@ export function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    return <Button variant="ghost" size="icon" className="h-8 w-8" aria-hidden />;
+    return <Button variant="ghost" size="icon" className="h-8 w-8" aria-hidden tabIndex={-1} />;
   }
 
   const isDark = resolvedTheme === "dark";
